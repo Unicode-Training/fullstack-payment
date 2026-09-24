@@ -1,0 +1,12 @@
+model UserPermission {
+    id           Int        @id @default(autoincrement())
+    permissionId Int
+    userId       Int
+    permission   Permission @relation(fields: [permissionId], references: [id])
+    user         User       @relation(fields: [userId], references: [id])
+    createdAt    DateTime   @default(now()) @db.Timestamp()
+    updatedAt    DateTime   @default(now()) @updatedAt @db.Timestamp()
+
+    @@unique([permissionId, userId])
+    @@map("users_permissions")
+}

@@ -1,0 +1,17 @@
+enum OrderStatus {
+    PENDING
+    COMPLETED
+}
+
+model Order {
+    id        Int         @id @default(autoincrement())
+    userId    Int
+    user      User        @relation(fields: [userId], references: [id])
+    total     Int
+    plan      UserPlan
+    status    OrderStatus @default(PENDING)
+    createdAt DateTime    @default(now()) @db.Timestamp()
+    updatedAt DateTime    @default(now()) @updatedAt @db.Timestamp()
+
+    @@map("orders")
+}

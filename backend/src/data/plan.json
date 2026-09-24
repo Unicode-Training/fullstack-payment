@@ -1,0 +1,12 @@
+[
+  {
+    "name": "FREE",
+    "price": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptas animi dolores earum velit corrupti excepturi voluptates vero ea labore aliquid, qui autem ab commodi nulla! Corporis, repudiandae suscipit. Tenetur!"
+  },
+  {
+    "name": "PRO",
+    "price": 100000,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptas animi dolores earum velit corrupti excepturi voluptates vero ea labore aliquid, qui autem ab commodi nulla! Corporis, repudiandae suscipit. Tenetur!"
+  }
+]
